@@ -7,12 +7,12 @@ composer install
 composer require mongodb/laravel-mongodb
 ```
 
-## Start server
+## Start Server
 ```
 php artisan serve
 ```
 
-## Models creation
+## Models Creation
 ```
 php artisan make:model User -m
 php artisan make:model Post -m
