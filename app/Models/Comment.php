@@ -4,11 +4,10 @@ namespace App\Models;
 
 use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Comment extends Model
 {
-      protected $connection = 'mongodb';
+    protected $connection = 'mongodb';
 
     protected $table = 'comments';
 
@@ -23,13 +22,8 @@ class Comment extends Model
         return $this->belongsTo(related: User::class);
     }
 
-    public function comments(): HasMany
+    public function post(): BelongsTo
     {
-        return $this->hasMany(related: Comment::class);
-    }
-
-    public function likes(): HasMany
-    {
-        return $this->hasMany(related: Like::class);
+        return $this->belongsTo(related: Post::class);
     }
 }
