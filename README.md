@@ -19,3 +19,13 @@ php artisan make:model Post -m
 php artisan make:model Like -m
 php artisan make:model Comment -m
 ```
+
+## Laravel UI Installation
+```
+composer require laravel/ui
+```
+
+## Authentication UI Scaffolding
+```
+php artisan ui bootstrap --auth
+```
