@@ -33,6 +33,7 @@ php artisan ui bootstrap --auth
 ## Building Controllers
 ```
 php artisan make:controller PostController --resource
+php artisan make:controller ProfileController --resource
 php artisan make:controller CommentController --resource
 php artisan make:controller LikeController --resource
 ```
