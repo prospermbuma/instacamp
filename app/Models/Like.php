@@ -3,12 +3,10 @@
 namespace App\Models;
 
 use MongoDB\Laravel\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Like extends Model
 {
-      protected $connection = 'mongodb';
-
+    protected $connection = 'mongodb';
     protected $table = 'likes';
 
     protected $fillable = [
@@ -16,13 +14,13 @@ class Like extends Model
         'post_id',
     ];
 
-    public function user(): BelongsTo
+    public function user()
     {
-        return $this->belongsTo(related: User::class);
+        return $this->belongsTo(User::class);
     }
-    
-    public function post(): BelongsTo
+
+    public function post()
     {
-        return $this->belongsTo(related: Post::class);
+        return $this->belongsTo(Post::class);
     }
 }
