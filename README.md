@@ -3,6 +3,8 @@ An Instagram clone app made up by Laravel and MongoDB.
 
 ## Project Setup
 ```
+composer global require laravel installer
+laravel new instacamp
 composer install
 composer require mongodb/laravel-mongodb
 ```
