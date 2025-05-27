@@ -39,3 +39,8 @@ php artisan make:controller ProfileController --resource
 php artisan make:controller CommentController --resource
 php artisan make:controller LikeController --resource
 ```
+
+## Public Storage Link Creation
+```
+php artisan storage:link
+```
