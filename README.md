@@ -44,3 +44,5 @@ php artisan make:controller LikeController --resource
 ```
 php artisan storage:link
 ```
+
+_Happy Coding_ 🤩
